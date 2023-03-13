@@ -1,0 +1,3 @@
+Hi,
+
+Week 1 was to create a minimal Git repository, and name it Hello World.  I have done this.  It is here: https://github.com/stilsons/Hello-World.  Please go there to check it.
