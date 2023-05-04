@@ -1,0 +1,27 @@
+yaxcatd (C:\Program Files\Tableau\Tableau 2023.1\bin\yaxcat\yaxcatd.exe) built at 5f260ca listening on 127.0.0.1:33479 with 8 worker threads.
+0.011ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.009ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.006ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.300ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.512ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.012ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.280ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.010ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.306ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.009ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.284ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.005ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.196ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.006ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.143ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.006ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.192ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.012ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.254ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.008ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.311ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.006ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.530ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+0.018ms; [no ensemble]::AggModelServiceImpl::ping: 
+0.282ms; [no ensemble]::AggModelServiceImpl::mark_stats: 
+stdin closed, exiting.
