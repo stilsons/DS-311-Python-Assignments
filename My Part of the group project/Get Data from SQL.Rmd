@@ -1,0 +1,79 @@
+---
+title: "Group Project"
+output: html_document
+date: "2023-04-26"
+author: Steve Stilson
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library(RMySQL)
+library(DBI);
+library(ggplot2)
+
+con = dbConnect(
+    drv = RMySQL::MySQL(),
+    dbname = "phpmyadmin",
+    host = "localhost",
+    username = "root",
+    password = ""
+  )
+
+rm (means);
+# rm (means2);
+means = data.frame(matrix(vector(), 0, 4, dimnames=list(c(), c('category','mean','withPhD','withoutPhD'))), stringsAsFactors=F);
+
+# means[nrow(means)+1,] = result;
+# means['A'] <- as.numeric(result); # c(result['A']);
+# print(means);
+options(digits=9);
+
+dataList <- list("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","AA","BB","CC","DD","EE","FF","GG","HH","II","JJ","KK","LL","MM","NN","OO","PP");
+for(category in dataList){
+  sqlMean = paste("SELECT avg(PAID_WAGE_SUBMITTED) FROM salaries.salary_data_states_2 where `COLLEGE_MAJOR_CODE` = '", category, "';",sep="", collapse="");
+  # print(sqlMean);
+  remove(result);
+  result <- vector("list", 4);
+  result[1] <- category;
+  result[2] <- suppressWarnings(as.numeric(dbGetQuery(con, sqlMean)));
+  # result is a list type of size 2 so far.
+
+  sqlMeanDoc = paste("SELECT avg(PAID_WAGE_SUBMITTED) FROM salaries.salary_data_states_2 where `COLLEGE_MAJOR_CODE` = '", category, "' and EDUCATION_LEVEL_REQUIRED = 'Doctorate';",sep="", collapse="");
+  
+print(sqlMeanDoc);
+  result[3] <- suppressWarnings(as.numeric(dbGetQuery(con, sqlMeanDoc)));
+  
+    sqlMeanNonDoc = paste("SELECT avg(PAID_WAGE_SUBMITTED) FROM salaries.salary_data_states_2 where `COLLEGE_MAJOR_CODE` = '", category, "' and EDUCATION_LEVEL_REQUIRED != 'Doctorate';",sep="", collapse="");
+  
+print(sqlMeanNonDoc);
+  result[4] <- suppressWarnings(as.numeric(dbGetQuery(con, sqlMeanNonDoc)));
+
+  means[nrow(means)+1,] = result;
+}
+```
+
+## Plot
+
+```{r}
+means <- means[order(means$mean), ];
+# means2 %>% ggplot(aes(x = category, y = mean)) +
+ggplot(means, aes(x = category, y = mean)) +
+  # geom_jitter() +
+  # geom_line() +
+  geom_hex( ) +
+  labs(  # annotations layer
+    title = "Salary averages by college major",
+    y = "Average salary"
+  )
+
+```
+
