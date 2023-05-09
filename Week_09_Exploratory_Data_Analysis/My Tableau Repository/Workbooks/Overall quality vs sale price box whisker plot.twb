@@ -1,0 +1,1893 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Bin Size' datatype='integer' datatype-customized='true' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='2'>
+        <calculation class='tableau' formula='2' />
+      </column>
+    </datasource>
+    <datasource caption='kings_county_data' inline='true' name='federated.19v9o780yn01gx1h5u3eu11ii215' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='kings_county_data' name='textscan.1if3qab1owgi3e1ea6gf21fdkmpy'>
+            <connection class='textscan' directory='C:/Users/stils/DS311-Technologies-in-Data-Analytic-SP23/Week_07_Tableau/data' filename='kings_county_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='SuperStoreManagers' inline='true' name='federated.0hrqrbf10uy8gg13senet1x7lq0s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SuperStoreManagers' name='excel-direct.1ufp18n1vheywo1egjkmn0vjel8x'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/stils/DS311-Technologies-in-Data-Analytic-SP23/Week_07_Tableau/data/SuperStoreManagers.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='Global Superstore Orders 2016' inline='true' name='federated.0xp0o6t1rr43xb1f0fluo0dk7kr3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Global Superstore Orders 2016' name='excel-direct.04xeox21e786dh10jbbg61tm03i6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/stils/OneDrive/Documents/DS311-Technologies-in-Data-Analytic-SP23/Week_07_Tableau/data/Global Superstore Orders 2016.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+    </datasource>
+    <datasource caption='ames' inline='true' name='federated.0x86tsu0dyrhv613ektmk1v43qr7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ames' name='textscan.0s1hlay0j6d4vk151l1s40z7099c'>
+            <connection class='textscan' directory='C:/Users/stils/DS311-Technologies-in-Data-Analytic-SP23/Week_09_Exploratory_Data_Analysis/EDA_Python/data' filename='ames.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0s1hlay0j6d4vk151l1s40z7099c' name='ames.csv' table='[ames#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='integer' name='MSSubClass' ordinal='1' />
+            <column datatype='string' name='MSZoning' ordinal='2' />
+            <column datatype='string' name='LotFrontage' ordinal='3' />
+            <column datatype='integer' name='LotArea' ordinal='4' />
+            <column datatype='string' name='Street' ordinal='5' />
+            <column datatype='string' name='Alley' ordinal='6' />
+            <column datatype='string' name='LotShape' ordinal='7' />
+            <column datatype='string' name='LandContour' ordinal='8' />
+            <column datatype='string' name='Utilities' ordinal='9' />
+            <column datatype='string' name='LotConfig' ordinal='10' />
+            <column datatype='string' name='LandSlope' ordinal='11' />
+            <column datatype='string' name='Neighborhood' ordinal='12' />
+            <column datatype='string' name='Condition1' ordinal='13' />
+            <column datatype='string' name='Condition2' ordinal='14' />
+            <column datatype='string' name='BldgType' ordinal='15' />
+            <column datatype='string' name='HouseStyle' ordinal='16' />
+            <column datatype='integer' name='OverallQual' ordinal='17' />
+            <column datatype='integer' name='OverallCond' ordinal='18' />
+            <column datatype='integer' name='YearBuilt' ordinal='19' />
+            <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+            <column datatype='string' name='RoofStyle' ordinal='21' />
+            <column datatype='string' name='RoofMatl' ordinal='22' />
+            <column datatype='string' name='Exterior1st' ordinal='23' />
+            <column datatype='string' name='Exterior2nd' ordinal='24' />
+            <column datatype='string' name='MasVnrType' ordinal='25' />
+            <column datatype='integer' name='MasVnrArea' ordinal='26' />
+            <column datatype='string' name='ExterQual' ordinal='27' />
+            <column datatype='string' name='ExterCond' ordinal='28' />
+            <column datatype='string' name='Foundation' ordinal='29' />
+            <column datatype='string' name='BsmtQual' ordinal='30' />
+            <column datatype='string' name='BsmtCond' ordinal='31' />
+            <column datatype='string' name='BsmtExposure' ordinal='32' />
+            <column datatype='string' name='BsmtFinType1' ordinal='33' />
+            <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+            <column datatype='string' name='BsmtFinType2' ordinal='35' />
+            <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+            <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+            <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+            <column datatype='string' name='Heating' ordinal='39' />
+            <column datatype='string' name='HeatingQC' ordinal='40' />
+            <column datatype='string' name='CentralAir' ordinal='41' />
+            <column datatype='string' name='Electrical' ordinal='42' />
+            <column datatype='integer' name='1stFlrSF' ordinal='43' />
+            <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+            <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+            <column datatype='integer' name='GrLivArea' ordinal='46' />
+            <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+            <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+            <column datatype='integer' name='FullBath' ordinal='49' />
+            <column datatype='integer' name='HalfBath' ordinal='50' />
+            <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+            <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+            <column datatype='string' name='KitchenQual' ordinal='53' />
+            <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+            <column datatype='string' name='Functional' ordinal='55' />
+            <column datatype='integer' name='Fireplaces' ordinal='56' />
+            <column datatype='string' name='FireplaceQu' ordinal='57' />
+            <column datatype='string' name='GarageType' ordinal='58' />
+            <column datatype='string' name='GarageYrBlt' ordinal='59' />
+            <column datatype='string' name='GarageFinish' ordinal='60' />
+            <column datatype='integer' name='GarageCars' ordinal='61' />
+            <column datatype='integer' name='GarageArea' ordinal='62' />
+            <column datatype='string' name='GarageQual' ordinal='63' />
+            <column datatype='string' name='GarageCond' ordinal='64' />
+            <column datatype='string' name='PavedDrive' ordinal='65' />
+            <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+            <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+            <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+            <column datatype='integer' name='3SsnPorch' ordinal='69' />
+            <column datatype='integer' name='ScreenPorch' ordinal='70' />
+            <column datatype='integer' name='PoolArea' ordinal='71' />
+            <column datatype='string' name='PoolQC' ordinal='72' />
+            <column datatype='string' name='Fence' ordinal='73' />
+            <column datatype='string' name='MiscFeature' ordinal='74' />
+            <column datatype='integer' name='MiscVal' ordinal='75' />
+            <column datatype='integer' name='MoSold' ordinal='76' />
+            <column datatype='integer' name='YrSold' ordinal='77' />
+            <column datatype='string' name='SaleType' ordinal='78' />
+            <column datatype='string' name='SaleCondition' ordinal='79' />
+            <column datatype='integer' name='SalePrice' ordinal='80' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0s1hlay0j6d4vk151l1s40z7099c' name='ames.csv' table='[ames#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Id' ordinal='0' />
+            <column datatype='integer' name='MSSubClass' ordinal='1' />
+            <column datatype='string' name='MSZoning' ordinal='2' />
+            <column datatype='string' name='LotFrontage' ordinal='3' />
+            <column datatype='integer' name='LotArea' ordinal='4' />
+            <column datatype='string' name='Street' ordinal='5' />
+            <column datatype='string' name='Alley' ordinal='6' />
+            <column datatype='string' name='LotShape' ordinal='7' />
+            <column datatype='string' name='LandContour' ordinal='8' />
+            <column datatype='string' name='Utilities' ordinal='9' />
+            <column datatype='string' name='LotConfig' ordinal='10' />
+            <column datatype='string' name='LandSlope' ordinal='11' />
+            <column datatype='string' name='Neighborhood' ordinal='12' />
+            <column datatype='string' name='Condition1' ordinal='13' />
+            <column datatype='string' name='Condition2' ordinal='14' />
+            <column datatype='string' name='BldgType' ordinal='15' />
+            <column datatype='string' name='HouseStyle' ordinal='16' />
+            <column datatype='integer' name='OverallQual' ordinal='17' />
+            <column datatype='integer' name='OverallCond' ordinal='18' />
+            <column datatype='integer' name='YearBuilt' ordinal='19' />
+            <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+            <column datatype='string' name='RoofStyle' ordinal='21' />
+            <column datatype='string' name='RoofMatl' ordinal='22' />
+            <column datatype='string' name='Exterior1st' ordinal='23' />
+            <column datatype='string' name='Exterior2nd' ordinal='24' />
+            <column datatype='string' name='MasVnrType' ordinal='25' />
+            <column datatype='integer' name='MasVnrArea' ordinal='26' />
+            <column datatype='string' name='ExterQual' ordinal='27' />
+            <column datatype='string' name='ExterCond' ordinal='28' />
+            <column datatype='string' name='Foundation' ordinal='29' />
+            <column datatype='string' name='BsmtQual' ordinal='30' />
+            <column datatype='string' name='BsmtCond' ordinal='31' />
+            <column datatype='string' name='BsmtExposure' ordinal='32' />
+            <column datatype='string' name='BsmtFinType1' ordinal='33' />
+            <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+            <column datatype='string' name='BsmtFinType2' ordinal='35' />
+            <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+            <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+            <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+            <column datatype='string' name='Heating' ordinal='39' />
+            <column datatype='string' name='HeatingQC' ordinal='40' />
+            <column datatype='string' name='CentralAir' ordinal='41' />
+            <column datatype='string' name='Electrical' ordinal='42' />
+            <column datatype='integer' name='1stFlrSF' ordinal='43' />
+            <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+            <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+            <column datatype='integer' name='GrLivArea' ordinal='46' />
+            <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+            <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+            <column datatype='integer' name='FullBath' ordinal='49' />
+            <column datatype='integer' name='HalfBath' ordinal='50' />
+            <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+            <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+            <column datatype='string' name='KitchenQual' ordinal='53' />
+            <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+            <column datatype='string' name='Functional' ordinal='55' />
+            <column datatype='integer' name='Fireplaces' ordinal='56' />
+            <column datatype='string' name='FireplaceQu' ordinal='57' />
+            <column datatype='string' name='GarageType' ordinal='58' />
+            <column datatype='string' name='GarageYrBlt' ordinal='59' />
+            <column datatype='string' name='GarageFinish' ordinal='60' />
+            <column datatype='integer' name='GarageCars' ordinal='61' />
+            <column datatype='integer' name='GarageArea' ordinal='62' />
+            <column datatype='string' name='GarageQual' ordinal='63' />
+            <column datatype='string' name='GarageCond' ordinal='64' />
+            <column datatype='string' name='PavedDrive' ordinal='65' />
+            <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+            <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+            <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+            <column datatype='integer' name='3SsnPorch' ordinal='69' />
+            <column datatype='integer' name='ScreenPorch' ordinal='70' />
+            <column datatype='integer' name='PoolArea' ordinal='71' />
+            <column datatype='string' name='PoolQC' ordinal='72' />
+            <column datatype='string' name='Fence' ordinal='73' />
+            <column datatype='string' name='MiscFeature' ordinal='74' />
+            <column datatype='integer' name='MiscVal' ordinal='75' />
+            <column datatype='integer' name='MoSold' ordinal='76' />
+            <column datatype='integer' name='YrSold' ordinal='77' />
+            <column datatype='string' name='SaleType' ordinal='78' />
+            <column datatype='string' name='SaleCondition' ordinal='79' />
+            <column datatype='integer' name='SalePrice' ordinal='80' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSSubClass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MSSubClass]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>MSSubClass</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSZoning</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSZoning]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>MSZoning</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotFrontage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotFrontage]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>LotFrontage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LotArea]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>LotArea</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Street]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Street</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alley</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Alley]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Alley</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotShape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotShape]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>LotShape</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandContour</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LandContour]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>LandContour</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Utilities</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Utilities]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Utilities</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LotConfig</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LotConfig]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>LotConfig</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandSlope</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LandSlope]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>LandSlope</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Neighborhood]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Neighborhood</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition1]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Condition1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Condition2]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Condition2</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BldgType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BldgType]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BldgType</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HouseStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HouseStyle]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>HouseStyle</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverallQual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OverallQual]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>OverallQual</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OverallCond</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OverallCond]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>OverallCond</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearBuilt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearBuilt]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>YearBuilt</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearRemodAdd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearRemodAdd]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>YearRemodAdd</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoofStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoofStyle]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>RoofStyle</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoofMatl</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoofMatl]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>RoofMatl</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exterior1st</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exterior1st]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Exterior1st</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exterior2nd</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exterior2nd]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Exterior2nd</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MasVnrType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MasVnrType]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>MasVnrType</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MasVnrArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MasVnrArea]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>MasVnrArea</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExterQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExterQual]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>ExterQual</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExterCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ExterCond]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>ExterCond</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foundation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Foundation]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Foundation</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtQual]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtQual</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtCond]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtCond</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtExposure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtExposure]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtExposure</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinType1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtFinType1]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtFinType1</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinSF1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFinSF1]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtFinSF1</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinType2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BsmtFinType2]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtFinType2</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFinSF2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFinSF2]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtFinSF2</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtUnfSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtUnfSF]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtUnfSF</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalBsmtSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalBsmtSF]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>TotalBsmtSF</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Heating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Heating]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Heating</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HeatingQC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HeatingQC]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>HeatingQC</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CentralAir</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CentralAir]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>CentralAir</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electrical</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Electrical]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Electrical</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1stFlrSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1stFlrSF]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>1stFlrSF</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2ndFlrSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2ndFlrSF]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>2ndFlrSF</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowQualFinSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LowQualFinSF]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>LowQualFinSF</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrLivArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GrLivArea]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GrLivArea</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtFullBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtFullBath]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtFullBath</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BsmtHalfBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BsmtHalfBath]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BsmtHalfBath</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FullBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FullBath]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>FullBath</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HalfBath</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HalfBath]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>HalfBath</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BedroomAbvGr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BedroomAbvGr]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>BedroomAbvGr</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KitchenAbvGr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KitchenAbvGr]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>KitchenAbvGr</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KitchenQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KitchenQual]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>KitchenQual</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotRmsAbvGrd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotRmsAbvGrd]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>TotRmsAbvGrd</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Functional</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Functional]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Functional</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fireplaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fireplaces]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Fireplaces</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FireplaceQu</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FireplaceQu]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>FireplaceQu</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageType]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GarageType</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageYrBlt</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageYrBlt]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GarageYrBlt</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageFinish</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageFinish]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GarageFinish</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageCars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GarageCars]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GarageCars</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GarageArea]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GarageArea</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageQual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageQual]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GarageQual</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GarageCond</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GarageCond]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>GarageCond</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PavedDrive</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PavedDrive]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>PavedDrive</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WoodDeckSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WoodDeckSF]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>WoodDeckSF</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpenPorchSF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpenPorchSF]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>OpenPorchSF</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EnclosedPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EnclosedPorch]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>EnclosedPorch</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3SsnPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3SsnPorch]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>3SsnPorch</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ScreenPorch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ScreenPorch]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>ScreenPorch</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoolArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PoolArea]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>PoolArea</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoolQC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PoolQC]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>PoolQC</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fence]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>Fence</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MiscFeature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MiscFeature]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>MiscFeature</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MiscVal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MiscVal]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>MiscVal</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MoSold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MoSold]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>MoSold</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YrSold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YrSold]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>YrSold</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaleType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SaleType]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>SaleType</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaleCondition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SaleCondition]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>SaleCondition</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SalePrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SalePrice]</local-name>
+            <parent-name>[ames.csv]</parent-name>
+            <remote-alias>SalePrice</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ames.csv_0A9E1853F95B442F93561A8E831429E4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Bedroom Abv Gr' datatype='integer' name='[BedroomAbvGr]' role='measure' type='quantitative' />
+      <column caption='Bldg Type' datatype='string' name='[BldgType]' role='dimension' type='nominal' />
+      <column caption='Bsmt Cond' datatype='string' name='[BsmtCond]' role='dimension' type='nominal' />
+      <column caption='Bsmt Exposure' datatype='string' name='[BsmtExposure]' role='dimension' type='nominal' />
+      <column caption='Bsmt Full Bath' datatype='integer' name='[BsmtFullBath]' role='measure' type='quantitative' />
+      <column caption='Bsmt Half Bath' datatype='integer' name='[BsmtHalfBath]' role='measure' type='quantitative' />
+      <column caption='Bsmt Qual' datatype='string' name='[BsmtQual]' role='dimension' type='nominal' />
+      <column caption='Bsmt Unf SF' datatype='integer' name='[BsmtUnfSF]' role='measure' type='quantitative' />
+      <column caption='Mean' datatype='real' name='[Calculation_2022960681339498499]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED: AVG([SalePrice])}' />
+      </column>
+      <column caption='LC Bin' datatype='integer' name='[Calculation_2306124507586875392]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([SalePrice]/[Parameters].[Parameter 1])*[Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Central Air' datatype='string' name='[CentralAir]' role='dimension' type='nominal' />
+      <column caption='Enclosed Porch' datatype='integer' name='[EnclosedPorch]' role='measure' type='quantitative' />
+      <column caption='Exter Cond' datatype='string' name='[ExterCond]' role='dimension' type='nominal' />
+      <column caption='Exter Qual' datatype='string' name='[ExterQual]' role='dimension' type='nominal' />
+      <column caption='Fireplace Qu' datatype='string' name='[FireplaceQu]' role='dimension' type='nominal' />
+      <column caption='Full Bath' datatype='integer' name='[FullBath]' role='measure' type='quantitative' />
+      <column caption='Garage Area' datatype='integer' name='[GarageArea]' role='measure' type='quantitative' />
+      <column caption='Garage Cars' datatype='integer' name='[GarageCars]' role='measure' type='quantitative' />
+      <column caption='Garage Cond' datatype='string' name='[GarageCond]' role='dimension' type='nominal' />
+      <column caption='Garage Finish' datatype='string' name='[GarageFinish]' role='dimension' type='nominal' />
+      <column caption='Garage Qual' datatype='string' name='[GarageQual]' role='dimension' type='nominal' />
+      <column caption='Garage Type' datatype='string' name='[GarageType]' role='dimension' type='nominal' />
+      <column caption='Garage Yr Blt' datatype='string' name='[GarageYrBlt]' role='dimension' type='nominal' />
+      <column caption='Gr Liv Area' datatype='integer' name='[GrLivArea]' role='measure' type='quantitative' />
+      <column caption='Half Bath' datatype='integer' name='[HalfBath]' role='measure' type='quantitative' />
+      <column caption='Heating QC' datatype='string' name='[HeatingQC]' role='dimension' type='nominal' />
+      <column caption='House Style' datatype='string' name='[HouseStyle]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Id]' role='dimension' type='ordinal' />
+      <column caption='Kitchen Abv Gr' datatype='integer' name='[KitchenAbvGr]' role='measure' type='quantitative' />
+      <column caption='Kitchen Qual' datatype='string' name='[KitchenQual]' role='dimension' type='nominal' />
+      <column caption='Land Contour' datatype='string' name='[LandContour]' role='dimension' type='nominal' />
+      <column caption='Land Slope' datatype='string' name='[LandSlope]' role='dimension' type='nominal' />
+      <column caption='Lot Area' datatype='integer' name='[LotArea]' role='measure' type='quantitative' />
+      <column caption='Lot Config' datatype='string' name='[LotConfig]' role='dimension' type='nominal' />
+      <column caption='Lot Frontage' datatype='string' name='[LotFrontage]' role='dimension' type='nominal' />
+      <column caption='Lot Shape' datatype='string' name='[LotShape]' role='dimension' type='nominal' />
+      <column caption='Low Qual Fin SF' datatype='integer' name='[LowQualFinSF]' role='measure' type='quantitative' />
+      <column caption='MS Sub Class' datatype='integer' name='[MSSubClass]' role='measure' type='quantitative' />
+      <column caption='MS Zoning' datatype='string' name='[MSZoning]' role='dimension' type='nominal' />
+      <column caption='Mas Vnr Area' datatype='integer' name='[MasVnrArea]' role='measure' type='quantitative' />
+      <column caption='Mas Vnr Type' datatype='string' name='[MasVnrType]' role='dimension' type='nominal' />
+      <column caption='Misc Feature' datatype='string' name='[MiscFeature]' role='dimension' type='nominal' />
+      <column caption='Misc Val' datatype='integer' name='[MiscVal]' role='measure' type='quantitative' />
+      <column caption='Mo Sold' datatype='integer' name='[MoSold]' role='measure' type='quantitative' />
+      <column caption='Open Porch SF' datatype='integer' name='[OpenPorchSF]' role='measure' type='quantitative' />
+      <column caption='Overall Cond' datatype='integer' name='[OverallCond]' role='measure' type='quantitative' />
+      <column caption='Overall Qual' datatype='integer' name='[OverallQual]' role='measure' type='quantitative' />
+      <column caption='Paved Drive' datatype='string' name='[PavedDrive]' role='dimension' type='nominal' />
+      <column caption='Pool Area' datatype='integer' name='[PoolArea]' role='measure' type='quantitative' />
+      <column caption='Pool QC' datatype='string' name='[PoolQC]' role='dimension' type='nominal' />
+      <column caption='Roof Matl' datatype='string' name='[RoofMatl]' role='dimension' type='nominal' />
+      <column caption='Roof Style' datatype='string' name='[RoofStyle]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Sale Price (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='4' formula='[SalePrice]' peg='0' size='24455' />
+      </column>
+      <column caption='Sale Condition' datatype='string' name='[SaleCondition]' role='dimension' type='nominal' />
+      <column caption='Sale Price' datatype='integer' name='[SalePrice]' role='measure' type='quantitative' />
+      <column caption='Sale Type' datatype='string' name='[SaleType]' role='dimension' type='nominal' />
+      <column caption='Screen Porch' datatype='integer' name='[ScreenPorch]' role='measure' type='quantitative' />
+      <column caption='Tot Rms Abv Grd' datatype='integer' name='[TotRmsAbvGrd]' role='measure' type='quantitative' />
+      <column caption='Total Bsmt SF' datatype='integer' name='[TotalBsmtSF]' role='measure' type='quantitative' />
+      <column caption='Wood Deck SF' datatype='integer' name='[WoodDeckSF]' role='measure' type='quantitative' />
+      <column caption='Year Built' datatype='integer' name='[YearBuilt]' role='dimension' type='quantitative' />
+      <column caption='Year Remod Add' datatype='integer' name='[YearRemodAdd]' role='dimension' type='quantitative' />
+      <column caption='Yr Sold' datatype='integer' name='[YrSold]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='ames.csv' datatype='table' name='[__tableau_internal_object_id__].[ames.csv_0A9E1853F95B442F93561A8E831429E4]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Bin Size' datatype='integer' datatype-customized='true' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='2'>
+          <calculation class='tableau' formula='2' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ames.csv' id='ames.csv_0A9E1853F95B442F93561A8E831429E4'>
+            <properties context=''>
+              <relation connection='textscan.0s1hlay0j6d4vk151l1s40z7099c' name='ames.csv' table='[ames#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Id' ordinal='0' />
+                  <column datatype='integer' name='MSSubClass' ordinal='1' />
+                  <column datatype='string' name='MSZoning' ordinal='2' />
+                  <column datatype='string' name='LotFrontage' ordinal='3' />
+                  <column datatype='integer' name='LotArea' ordinal='4' />
+                  <column datatype='string' name='Street' ordinal='5' />
+                  <column datatype='string' name='Alley' ordinal='6' />
+                  <column datatype='string' name='LotShape' ordinal='7' />
+                  <column datatype='string' name='LandContour' ordinal='8' />
+                  <column datatype='string' name='Utilities' ordinal='9' />
+                  <column datatype='string' name='LotConfig' ordinal='10' />
+                  <column datatype='string' name='LandSlope' ordinal='11' />
+                  <column datatype='string' name='Neighborhood' ordinal='12' />
+                  <column datatype='string' name='Condition1' ordinal='13' />
+                  <column datatype='string' name='Condition2' ordinal='14' />
+                  <column datatype='string' name='BldgType' ordinal='15' />
+                  <column datatype='string' name='HouseStyle' ordinal='16' />
+                  <column datatype='integer' name='OverallQual' ordinal='17' />
+                  <column datatype='integer' name='OverallCond' ordinal='18' />
+                  <column datatype='integer' name='YearBuilt' ordinal='19' />
+                  <column datatype='integer' name='YearRemodAdd' ordinal='20' />
+                  <column datatype='string' name='RoofStyle' ordinal='21' />
+                  <column datatype='string' name='RoofMatl' ordinal='22' />
+                  <column datatype='string' name='Exterior1st' ordinal='23' />
+                  <column datatype='string' name='Exterior2nd' ordinal='24' />
+                  <column datatype='string' name='MasVnrType' ordinal='25' />
+                  <column datatype='integer' name='MasVnrArea' ordinal='26' />
+                  <column datatype='string' name='ExterQual' ordinal='27' />
+                  <column datatype='string' name='ExterCond' ordinal='28' />
+                  <column datatype='string' name='Foundation' ordinal='29' />
+                  <column datatype='string' name='BsmtQual' ordinal='30' />
+                  <column datatype='string' name='BsmtCond' ordinal='31' />
+                  <column datatype='string' name='BsmtExposure' ordinal='32' />
+                  <column datatype='string' name='BsmtFinType1' ordinal='33' />
+                  <column datatype='integer' name='BsmtFinSF1' ordinal='34' />
+                  <column datatype='string' name='BsmtFinType2' ordinal='35' />
+                  <column datatype='integer' name='BsmtFinSF2' ordinal='36' />
+                  <column datatype='integer' name='BsmtUnfSF' ordinal='37' />
+                  <column datatype='integer' name='TotalBsmtSF' ordinal='38' />
+                  <column datatype='string' name='Heating' ordinal='39' />
+                  <column datatype='string' name='HeatingQC' ordinal='40' />
+                  <column datatype='string' name='CentralAir' ordinal='41' />
+                  <column datatype='string' name='Electrical' ordinal='42' />
+                  <column datatype='integer' name='1stFlrSF' ordinal='43' />
+                  <column datatype='integer' name='2ndFlrSF' ordinal='44' />
+                  <column datatype='integer' name='LowQualFinSF' ordinal='45' />
+                  <column datatype='integer' name='GrLivArea' ordinal='46' />
+                  <column datatype='integer' name='BsmtFullBath' ordinal='47' />
+                  <column datatype='integer' name='BsmtHalfBath' ordinal='48' />
+                  <column datatype='integer' name='FullBath' ordinal='49' />
+                  <column datatype='integer' name='HalfBath' ordinal='50' />
+                  <column datatype='integer' name='BedroomAbvGr' ordinal='51' />
+                  <column datatype='integer' name='KitchenAbvGr' ordinal='52' />
+                  <column datatype='string' name='KitchenQual' ordinal='53' />
+                  <column datatype='integer' name='TotRmsAbvGrd' ordinal='54' />
+                  <column datatype='string' name='Functional' ordinal='55' />
+                  <column datatype='integer' name='Fireplaces' ordinal='56' />
+                  <column datatype='string' name='FireplaceQu' ordinal='57' />
+                  <column datatype='string' name='GarageType' ordinal='58' />
+                  <column datatype='string' name='GarageYrBlt' ordinal='59' />
+                  <column datatype='string' name='GarageFinish' ordinal='60' />
+                  <column datatype='integer' name='GarageCars' ordinal='61' />
+                  <column datatype='integer' name='GarageArea' ordinal='62' />
+                  <column datatype='string' name='GarageQual' ordinal='63' />
+                  <column datatype='string' name='GarageCond' ordinal='64' />
+                  <column datatype='string' name='PavedDrive' ordinal='65' />
+                  <column datatype='integer' name='WoodDeckSF' ordinal='66' />
+                  <column datatype='integer' name='OpenPorchSF' ordinal='67' />
+                  <column datatype='integer' name='EnclosedPorch' ordinal='68' />
+                  <column datatype='integer' name='3SsnPorch' ordinal='69' />
+                  <column datatype='integer' name='ScreenPorch' ordinal='70' />
+                  <column datatype='integer' name='PoolArea' ordinal='71' />
+                  <column datatype='string' name='PoolQC' ordinal='72' />
+                  <column datatype='string' name='Fence' ordinal='73' />
+                  <column datatype='string' name='MiscFeature' ordinal='74' />
+                  <column datatype='integer' name='MiscVal' ordinal='75' />
+                  <column datatype='integer' name='MoSold' ordinal='76' />
+                  <column datatype='integer' name='YrSold' ordinal='77' />
+                  <column datatype='string' name='SaleType' ordinal='78' />
+                  <column datatype='string' name='SaleCondition' ordinal='79' />
+                  <column datatype='integer' name='SalePrice' ordinal='80' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ames' name='federated.0x86tsu0dyrhv613ektmk1v43qr7' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bin Size' datatype='integer' datatype-customized='true' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='2'>
+              <calculation class='tableau' formula='2' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0x86tsu0dyrhv613ektmk1v43qr7'>
+            <column caption='Overall Qual' datatype='integer' name='[OverallQual]' role='measure' type='quantitative' />
+            <column caption='Sale Price' datatype='integer' name='[SalePrice]' role='measure' type='quantitative' />
+            <column-instance column='[OverallQual]' derivation='None' name='[none:OverallQual:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[OverallQual]' derivation='None' name='[none:OverallQual:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SalePrice]' derivation='None' name='[none:SalePrice:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[Parameters].[Parameter 1]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+            <encoding attr='color' field='[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:OverallQual:qk]' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:OverallQual:qk]' />
+              <geometry column='[federated.0x86tsu0dyrhv613ektmk1v43qr7].[Geometry (generated)]' />
+            </encodings>
+            <reference-line axis-column='[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:SalePrice:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:SalePrice:qk]' z-order='1' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:SalePrice:qk]</rows>
+        <cols>[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:OverallQual:ok]</cols>
+      </table>
+      <simple-id uuid='{0997371E-3FF6-406C-9937-ACEB29B9F9D6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='93'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:OverallCond:qk]</field>
+            <field>[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:OverallQual:qk]</field>
+            <field>[federated.0x86tsu0dyrhv613ektmk1v43qr7].[none:Sale Price (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{2905D9EC-D124-41F4-BDE4-738694CBDC12}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='288' name='Sheet 1' width='288'>
+      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
+      ZL5vv57/PynhCmX5fOlRAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
